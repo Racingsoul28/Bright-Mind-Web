@@ -1,0 +1,38 @@
+/*--General--*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+/*--CIERRE: General--*/
+
+/*--Menu--*/
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;    
+}
+/*--CIERRE: Menu--*/
+
+/*--Slider--*/
+.carousel{
+    margin: 0px 20px;
+}
+.carousel-inner{
+    max-height: 39rem;
+    display: flex;
+    align-items: center;
+}
+/*--Slider--*/
+
+/*--medi querys--*/
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+}
+/*--CIERRE: medi querys--*/

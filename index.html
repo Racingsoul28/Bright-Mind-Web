@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bright Mind Academy</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styleSecondary.css">
   </head>
   <body class="container-fluid p-0 m-0">
     <div class="container-fluid p-0 m-0">
@@ -15,7 +16,7 @@
       <!--CIERRE: Encabezado-->
 
       <!--Barra de navegacion-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
             <span class="text-primary fs-5 fw-bold">Bright Mind</span>
@@ -61,21 +62,51 @@
                 </a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="email">
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Search"
-                aria-label="Search"
+                placeholder="Correo electr&oacute;nico"
+                aria-label="e-mail"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Searches
+              <button class="btn btn-primary btn-primary-outline-success" type="button">
+                Suscribete
               </button>
             </form>
           </div>
         </div>
       </nav>
       <!--CIERRE: Barra de navegacion-->
+      <!--Slider-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./src/img/inicio/dubai-creek-9060098_1920.jpg" class="d-block w-100" alt="slide1">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./src/img/inicio/hot-air-balloons-6757939_1920.jpg" class="d-block w-100" alt="slide2">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./src/img/inicio/invalidendom-8596490_1920.jpg" class="d-block w-100" alt="slide3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--CIERRE: Slider-->
+      <!--Intro-->
+      <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1 class="p-3 fs-2 border-top border-3">Una academia perfecta para<span class="text-primary"> El Aprendizaje temprano</span></h1>
+        <p>Expertos en capacitaciones para el reforzamiento academico y el aprendizade de inglés</p>
+      </section>
+      <!--CIERRE: Intro-->
+
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" />
   </body>
